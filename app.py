@@ -3,7 +3,7 @@ from models.task import db
 from controllers.task_controller import *
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:123@10.128.0.3:3306/isbn'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:123@34.31.176.104:3306/isbn'
 db.init_app(app)
 
 app.register_blueprint(task_blueprint)
